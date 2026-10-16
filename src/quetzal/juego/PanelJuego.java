@@ -44,6 +44,8 @@ public class PanelJuego extends JPanel implements KeyListener, Runnable {
 
     private boolean arriba = false;
     private boolean abajo = false;
+    private boolean izquierda = false;
+    private boolean derecha = false;
     private Random rnd = new Random();
     private Thread generador;
     private Thread repintado;
@@ -93,11 +95,23 @@ public class PanelJuego extends JPanel implements KeyListener, Runnable {
         if (abajo) {
             jugadorY += v;
         }
+        if (izquierda) {
+            jugadorX -= v;
+        }
+        if (derecha) {
+            jugadorX += v;
+        }
         if (jugadorY < 20) {
             jugadorY = 20;
         }
         if (jugadorY > ALTO - 60) {
             jugadorY = ALTO - 60;
+        }
+        if (jugadorX < 10) {
+            jugadorX = 10;
+        }
+        if (jugadorX > ANCHO - 120) {
+            jugadorX = ANCHO - 120;
         }
     }
 
@@ -346,6 +360,12 @@ public class PanelJuego extends JPanel implements KeyListener, Runnable {
         if (c == KeyEvent.VK_DOWN || c == KeyEvent.VK_S) {
             abajo = true;
         }
+        if (c == KeyEvent.VK_LEFT || c == KeyEvent.VK_A) {
+            izquierda = true;
+        }
+        if (c == KeyEvent.VK_RIGHT || c == KeyEvent.VK_D) {
+            derecha = true;
+        }
         if (c == KeyEvent.VK_SPACE) {
             disparar();
         }
@@ -359,6 +379,12 @@ public class PanelJuego extends JPanel implements KeyListener, Runnable {
         }
         if (c == KeyEvent.VK_DOWN || c == KeyEvent.VK_S) {
             abajo = false;
+        }
+        if (c == KeyEvent.VK_LEFT || c == KeyEvent.VK_A) {
+            izquierda = false;
+        }
+        if (c == KeyEvent.VK_RIGHT || c == KeyEvent.VK_D) {
+            derecha = false;
         }
     }
 

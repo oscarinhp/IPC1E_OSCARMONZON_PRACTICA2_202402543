@@ -1,4 +1,4 @@
-﻿package quetzal.ui;
+package quetzal.ui;
 
 import quetzal.modelo.Almacen;
 import quetzal.modelo.Partida;
