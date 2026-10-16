@@ -19,7 +19,7 @@ Al abrir verás 4 botones:
 
 ## 3. Cómo jugar
 - Tu nave está a la izquierda (verde, naranja si bloqueado).
-- Mover: flechas Arriba/Abajo o W/S.
+- Mover: flechas o WASD en las 4 direcciones (arriba/abajo/izquierda/derecha).
 - Disparar: ESPACIO (respeta cooldown de tu nave).
 - Enemigos rojos y asteroides grises vienen de derecha a izquierda.
 - Objetos:
@@ -41,9 +41,23 @@ Al abrir verás 4 botones:
 - Piloto duplicado: usa otro nombre.
 - Juego muy rápido/lento: es por la nave elegida, prueba otra dificultad.
 
-## Capturas (tómalas al probar)
+## Capturas
 1. Menú principal con los 4 botones.
+
+![Menu principal](img/01_menu.png)
+
 2. Crear piloto con las 3 naves.
+
+![Crear piloto](img/02_crear_piloto.png)
+
 3. Partida en curso con puntaje.
+
+![Partida](img/03_partida.png)
+
 4. Top con gráfica.
+
+![Top puntajes](img/04_top.png)
+
 5. `reporte.html` abierto en navegador.
+
+![Reporte HTML](img/05_reporte.png)
