@@ -1,0 +1,5 @@
+bin/
+out/
+*.class
+reporte.html
+grafica_top.png
